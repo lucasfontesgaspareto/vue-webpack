@@ -1,4 +1,4 @@
-# seotopper-vue-webpack
+# vue-webpack
 
 > A Vue.js project
 

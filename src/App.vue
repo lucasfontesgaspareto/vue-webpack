@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <router-link to="/">home</router-link>
-    <router-link to="/teste">teste</router-link>
-    <router-link to="/fdsfsdfdsfsdf">404</router-link>
+<div class="menu">
+  <router-link to="/">Home</router-link>
+  <router-link to="/bacon-hunter">Bacon Hunter</router-link>
 
-
+</div>
     <router-view></router-view>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
    @import './src/assets/css/main.scss';
 
    #app {
@@ -24,6 +24,25 @@ export default {
      -moz-osx-font-smoothing: grayscale;
      text-align: center;
      color: #2c3e50;
-     margin-top: 60px;
+
+     a {
+       text-decoration: none;
+       font-weight: 900;
+       color: #2c3e50;
+       margin: 10px;
+       transition: .1s
+     }
+     a:hover {
+       color: #1f262e;
+       transform: scale(1.1, 1.1);
+     }
+     .menu {
+       background: #ffffff;
+       width: 100vw;
+       height: 10vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
    }
 </style>
